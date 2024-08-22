@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  eupf:
+    container_name: eupf
+    image: ghcr.io/edgecomllc/eupf:0.5.2
+    privileged: true
+    network_mode: "bridge"
+    command: --iface eth0 --n3addr 172.17.0.2 --nodeid 172.17.0.2 --paddr :8805 --attach generic --loglvl debug
+    volumes:
+      - /sys/fs/bpf:/sys/fs/bpf
+    environment:
+      GIN_MODE: release
+    ulimits:
+      memlock: -1
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+      - SYS_RESOURCE # setrlimit

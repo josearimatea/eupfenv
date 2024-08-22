@@ -1,0 +1,17 @@
+# 1. Repo eupf
+https://github.com/edgecomllc/eupf
+
+# 2. How to install and run eUPF
+https://github.com/edgecomllc/eupf/blob/v0.6.4/docs/install.md
+
+# 3. Swagger API
+http://localhost:8080/swagger/index.html
+
+# 4. eUPF API Documentation
+https://github.com/edgecomllc/eupf/blob/v0.6.4/docs/api.md
+
+# 5. EUPF Config
+https://github.com/edgecomllc/eupf/blob/v0.6.4/docs/Configuration.md
+
+# 6. Test eupf
+https://github.com/edgecomllc/eupf/blob/main/docs/load-testing.md

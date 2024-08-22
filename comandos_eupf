@@ -1,0 +1,19 @@
+# 1. Init eupf
+sudo ./bin/eupf
+
+# 2. Init eupf com configuracao
+sudo ./bin/eupf --config config.yaml
+
+# 3. Pegar a configuração e usar api
+curl -X GET http://localhost:8080/api/v1/config 
+
+# 4. Teste geral
+pytest pytest/test_session.py
+
+# 5. Teste individual
+python3 scripts/scapy/SessionEstablishmentRequest.py
+
+# 6. Teste eupf
+sudo ./t-rex-64 -i
+./trex-console
+trex>start -f stl/gtp_1pkt_simple.py -p 0 -m 5mpps -d 300

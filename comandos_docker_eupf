@@ -1,0 +1,23 @@
+# 1. Encerrar o container
+docker stop eupf
+
+# 2. Remover o container
+docker rm eupf
+
+# 3. Iniciar o container novamente
+docker run -d --name eupf eupf:latest
+
+# 4. Verificar os logs do container
+docker logs -f eupf
+
+# 5. Entrar no container e executar o comando
+docker exec -it eupf /bin/bash
+docker exec -it eupf /bin/sh  
+
+6. Start
+docker start -i oai-upf
+
+7. Build
+docker build -t local/eupf:latest . 
+
+

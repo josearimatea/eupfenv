@@ -1,0 +1,6 @@
+Tarefas
+
+1 - Montar interface dummy.
+2 - Montar pacote TCP (usando scapy) enviar para minha interface de rede dummy, e validar com Wireshark.
+2 - Montar um pacote gtp/udp baseado no repositório: https://github.com/navarrothiago/upf-bpf/blob/master/tests/trex/traffic/gtp_1pkt_simple.py
+3 - Mudar código para colocar as configurações de rede certas para N3.
